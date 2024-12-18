@@ -1,0 +1,318 @@
+/* General Styles */
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+  background-color:aqua;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.header_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Styling */
+.header_logo a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Georgia', serif;
+}
+
+/* Navigation Menu */
+.header_menu ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.header_menu a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.header_menu a:hover {
+  color: #ff6f61;
+}
+
+/* Shopping Cart Button */
+.text-end {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.badge {
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+.bg-danger {
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+/* Logout Button */
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.logout-btn {
+  margin-left: 10px;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header_nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .header_menu ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .text-end {
+      justify-content: flex-end;
+      width: 100%;
+  }
+}
+
+
+.file {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Row styles to make it a flex container */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Adds space between text and image */
+}
+
+/* Text part styling */
+.text-left {
+    flex: 1;
+    padding: 20px;
+    width: 345px;
+    text-align: justify;
+}
+.text-left::first-letter{
+    font-size: 32px;
+}
+
+.text-left h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-left p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Image part styling */
+.image-right {
+    flex: 1;
+}
+
+.image-right img {
+    width: 100%;
+    max-width: 600px; /* Limiting the image size */
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* CSS for the container row styling */
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.container .row .col-12 {
+    flex: 1 1 100%; /* Full width on smaller devices */
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container .row .col-md-4 {
+    flex: 1 1 calc(33.333% - 20px); /* One-third width with spacing for desktop */
+    max-width: calc(33.333% - 20px);
+}
+
+.container .row i {
+    font-size: 2rem;
+    color: #ffa500;
+    margin-bottom: 10px;
+}
+
+.container .row h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container .row p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .container .row .col-md-4 {
+        flex: 1 1 100%; /* Full width on smaller devices */
+        max-width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Màu nền tối */
+    color: #fff; /* Chữ màu trắng */
+    padding: 40px 20px; /* Khoảng cách bên trong */
+    font-family: Arial, sans-serif; /* Phông chữ đơn giản */
+  }
+  
+  footer .container {
+    display: flex; /* Dùng flex để chia đều các vùng */
+    flex-wrap: wrap; /* Tự động xuống dòng trên màn hình nhỏ */
+    justify-content: space-between; /* Khoảng cách đều giữa các phần */
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  footer .footer-section {
+    flex: 1 1 200px; /* Chiếm tối thiểu 200px */
+    margin-bottom: 20px; /* Khoảng cách giữa các vùng */
+  }
+  
+  footer h3, footer h4 {
+    margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+    color: white; /* Màu tiêu đề nổi bật */
+  }
+  
+  footer p {
+    margin: 0 0 10px; /* Khoảng cách dưới đoạn văn */
+  }
+  
+  footer ul {
+    list-style: none; /* Bỏ dấu chấm ở danh sách */
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+  }
+  
+  footer ul li a {
+    color: #fff; /* Chữ màu trắng */
+    text-decoration: none; /* Bỏ gạch chân */
+    transition: color 0.3s; /* Hiệu ứng mượt khi đổi màu */
+  }
+  
+  footer ul li a:hover {
+    color: #f4a261; /* Màu nổi bật khi hover */
+  }
+  
+  footer .social-links a {
+    color: #fff; /* Chữ màu trắng */
+    text-decoration: none;
+    margin-right: 10px; /* Khoảng cách giữa các liên kết */
+    transition: color 0.3s;
+  }
+  
+  footer .social-links a:hover {
+    color: #f4a261; /* Màu nổi bật khi hover */
+  }
+  
+  /* Đường phân cách */
+  footer hr {
+    border: 0.5px solid #555; /* Màu xám nhạt */
+    margin: 20px 0; /* Khoảng cách trên dưới */
+  }
+  
+  /* Bản quyền */
+  footer p.copy {
+    text-align: center;
+    font-size: 14px; /* Cỡ chữ nhỏ */
+    margin: 0; /* Bỏ khoảng cách xung quanh */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    footer .container {
+      flex-direction: column; /* Chuyển thành cột trên màn hình nhỏ */
+      text-align: center; /* Căn giữa nội dung */
+    }
+  
+    footer .footer-section {
+      margin-bottom: 20px; /* Khoảng cách giữa các vùng */
+    }
+  }
+  
+  
+  
+  

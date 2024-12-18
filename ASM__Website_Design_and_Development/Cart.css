@@ -1,0 +1,214 @@
+.btn-secondary {
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #6c757d;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    color: #fff;
+}
+
+.text-start {
+    margin-bottom: 20px;
+}
+.cart-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.quantity-input {
+    max-width: 70px;
+}
+
+.product-card {
+    margin-bottom: 20px;
+}
+/* CSS cho modal hóa đơn */
+#bill-modal .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+#bill-modal .modal-title {
+    color: #495057;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#bill-modal .modal-body {
+    background-color: #fff;
+}
+
+#bill-modal table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+#bill-modal table th, #bill-modal table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+#bill-modal table th {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+#bill-modal .text-end {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #212529;
+}
+
+/* CSS cho nút */
+#checkout-button {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#checkout-button:hover {
+    background-color: #218838;
+}
+
+
+/* In hóa đơn (CSS cho cửa sổ in) */
+@media print {
+    body {
+        font-family: Arial, sans-serif;
+        color: #212529;
+        margin: 20px;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    table th, table td {
+        border: 1px solid #dee2e6;
+        padding: 10px;
+        text-align: left;
+    }
+
+    table th {
+        background-color: #f8f9fa;
+    }
+
+    .text-end {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: right;
+    }
+
+    button {
+        display: none; /* Ẩn nút khi in */
+    }
+}
+/* Footer */
+footer {
+    background-color: #333; /* Màu nền tối */
+    color: #fff; /* Chữ màu trắng */
+    padding: 40px 20px; /* Khoảng cách bên trong */
+    font-family: Arial, sans-serif; /* Phông chữ đơn giản */
+  }
+  
+  footer .container {
+    display: flex; /* Dùng flex để chia đều các vùng */
+    flex-wrap: wrap; /* Tự động xuống dòng trên màn hình nhỏ */
+    justify-content: space-between; /* Khoảng cách đều giữa các phần */
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  footer .footer-section {
+    flex: 1 1 200px; /* Chiếm tối thiểu 200px */
+    margin-bottom: 20px; /* Khoảng cách giữa các vùng */
+  }
+  
+  footer h3, footer h4 {
+    margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+    color: white; /* Màu tiêu đề nổi bật */
+  }
+  
+  footer p {
+    margin: 0 0 10px; /* Khoảng cách dưới đoạn văn */
+  }
+  
+  footer ul {
+    list-style: none; /* Bỏ dấu chấm ở danh sách */
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+  }
+  
+  footer ul li a {
+    color: #fff; /* Chữ màu trắng */
+    text-decoration: none; /* Bỏ gạch chân */
+    transition: color 0.3s; /* Hiệu ứng mượt khi đổi màu */
+  }
+  
+  footer ul li a:hover {
+    color: #f4a261; /* Màu nổi bật khi hover */
+  }
+  
+  footer .social-links a {
+    color: #fff; /* Chữ màu trắng */
+    text-decoration: none;
+    margin-right: 10px; /* Khoảng cách giữa các liên kết */
+    transition: color 0.3s;
+  }
+  
+  footer .social-links a:hover {
+    color: #f4a261; /* Màu nổi bật khi hover */
+  }
+  
+  /* Đường phân cách */
+  footer hr {
+    border: 0.5px solid #555; /* Màu xám nhạt */
+    margin: 20px 0; /* Khoảng cách trên dưới */
+  }
+  
+  /* Bản quyền */
+  footer p.copy {
+    text-align: center;
+    font-size: 14px; /* Cỡ chữ nhỏ */
+    margin: 0; /* Bỏ khoảng cách xung quanh */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    footer .container {
+      flex-direction: column; /* Chuyển thành cột trên màn hình nhỏ */
+      text-align: center; /* Căn giữa nội dung */
+    }
+  
+    footer .footer-section {
+      margin-bottom: 20px; /* Khoảng cách giữa các vùng */
+    }
+  }
